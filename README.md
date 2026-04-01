@@ -10,6 +10,8 @@ Sp26_61608_Group 3
 6. Joshua Welch	@jew22145
 ## Problem Description
 ## Data Model
+<img width="1619" height="925" alt="Screenshot 2026-04-01 160752" src="https://github.com/user-attachments/assets/e341135b-4edc-42a6-8d45-2ddb12242410" />
+
 ## Data Dictionary
 ## Query
 1. Query 1.
