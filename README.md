@@ -12,16 +12,16 @@ Sp26_61608_Group 3
 ## Data Model
 ## Data Dictionary
 ## Query
-Query 1.
-Query 2.
-Query 3.
-Query 4.
-Query 5.
-Query 6. 
-Query 7.
-Query 8.
-Query 9.
-Query 10.
+1. Query 1.
+2. Query 2.
+3. Query 3.
+4. Query 4.
+5. Query 5.
+6. Query 6.
+7. Query 7.
+8. Query 8.
+9. Query 9.
+10. Query 10.
 ## Database Information
 Name of the database: ns_Sp_61608_Group3
 
