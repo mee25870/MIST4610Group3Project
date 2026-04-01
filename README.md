@@ -2,12 +2,12 @@
 ## Team Name
 Sp26_61608_Group 3
 ## Team Members
-1. Madeleine Ebert	@mee25870
-2. Israel Erewa-Meggison @ite75326
-3. Cole Hauser	@cbh56026
-4. Trey	Hill @rhh42544
-5. Ciara Trinh 	@cmt37912
-6. Joshua Welch	@jew22145
+1. Madeleine Ebert [@mee25870](https://github.com/mee25870)
+2. Israel Erewa-Meggison [@israelmeggison](https://github.com/israelmeggison)
+3. Cole Hauser	
+4. Trey Hill [@treyhill277](https://github.com/treyhill277)
+5. Ciara Trinh 
+6. Joshua Welch
 ## Problem Description
 ## Data Model
 <img width="1619" height="925" alt="Screenshot 2026-04-01 160752" src="https://github.com/user-attachments/assets/e341135b-4edc-42a6-8d45-2ddb12242410" />
