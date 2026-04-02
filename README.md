@@ -13,6 +13,17 @@ Sp26_61608_Group 3
 <img width="1619" height="925" alt="Screenshot 2026-04-01 160752" src="https://github.com/user-attachments/assets/e341135b-4edc-42a6-8d45-2ddb12242410" />
 
 ## Data Dictionary
+1. Drones
+2. Routes
+3. Packages
+4. Customers
+5. Deliveries
+6. Flight_Logs
+7. Maintenance_Logs
+8. Technicians
+9. Maintenance_Parts
+10. Charging_Stations
+
 ## Query
 1. Query 1.
 2. Query 2.
