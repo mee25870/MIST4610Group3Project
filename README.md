@@ -13,16 +13,123 @@ Sp26_61608_Group 3
 <img width="1619" height="925" alt="Screenshot 2026-04-01 160752" src="https://github.com/user-attachments/assets/e341135b-4edc-42a6-8d45-2ddb12242410" />
 
 ## Data Dictionary
+
 1. Drones
+
+| COLUMN | DATA TYPE | ROLE |
+|--------|----------|------|
+| drone_id | VARCHAR(35) | PK |
+| model | VARCHAR(35) |  |
+| status | VARCHAR(11) |  |
+| total_flight_hours | DECIMAL(7,2) |  |
+| max_payload_weight | INT |  |
+| current_battery_level | INT |  |
+
 2. Routes
+
+| COLUMN | DATA TYPE | ROLE |
+|--------|----------|------|
+| route_id | VARCHAR(35) | PK |
+| origin_location | VARCHAR(45) |  |
+| destination_location | VARCHAR(45) |  |
+| distance_km | DECIMAL(10,2) |  |
+| estimated_duration | VARCHAR(45) |  |
+
 3. Packages
+
+| COLUMN | DATA TYPE | ROLE |
+|--------|----------|------|
+| package_id | VARCHAR(45) | PK |
+| customer_id | VARCHAR(35) | FK |
+| delivery_id | VARCHAR(45) | FK |
+| weight | DECIMAL(5,2) |  |
+| dimensions | VARCHAR(45) |  |
+| package_status | VARCHAR(15) |  |
+
 4. Customers
+
+| COLUMN | DATA TYPE | ROLE |
+|--------|----------|------|
+| customer_id | VARCHAR(35) | PK |
+| name | VARCHAR(45) |  |
+| phone | VARCHAR(45) |  |
+| email | VARCHAR(45) |  |
+| delivery_address | VARCHAR(45) |  |
+
 5. Deliveries
+
+| COLUMN | DATA TYPE | ROLE |
+|--------|----------|------|
+| delivery_id | VARCHAR(45) | PK |
+| drone_id | VARCHAR(35) | FK |
+| route_id | VARCHAR(35) | FK |
+| customer_id | VARCHAR(35) | FK |
+| start_time | DATETIME |  |
+| end_time | DATETIME |  |
+| delivery_status | VARCHAR(25) |  |
+
 6. Flight_Logs
+
+| COLUMN | DATA TYPE | ROLE |
+|--------|----------|------|
+| flight_log_id | VARCHAR(45) | PK |
+| drone_id | VARCHAR(35) | FK |
+| route_id | VARCHAR(35) | FK |
+| flight_start_time | DATETIME |  |
+| flight_end_time | DATETIME |  |
+| flight_duration_hours | DECIMAL(6,2) |  |
+
 7. Maintenance_Logs
+
+| COLUMN | DATA TYPE | ROLE |
+|--------|----------|------|
+| maintenance_log_id | VARCHAR(45) | PK |
+| drone_id | VARCHAR(35) | FK |
+| lead_technician_id | VARCHAR(35) | FK |
+| maintenance_date | DATETIME |  |
+| maintenance_type | VARCHAR(45) |  |
+| description | VARCHAR(99) |  |
+| total_flight_hours_at_service | DECIMAL(5,2) |  |
+
 8. Technicians
+
+| COLUMN | DATA TYPE | ROLE |
+|--------|----------|------|
+| technician_id | VARCHAR(35) | PK |
+| name | VARCHAR(35) |  |
+| specialization | VARCHAR(45) |  |
+| phone | VARCHAR(45) |  |
+| email | VARCHAR(45) |  |
+
 9. Maintenance_Parts
+
+| COLUMN | DATA TYPE | ROLE |
+|--------|----------|------|
+| part_id | VARCHAR(45) | PK |
+| maintenance_log_id | VARCHAR(45) | FK |
+| part_name | VARCHAR(45) |  |
+| quantity | INT |  |
+| cost | DECIMAL(8,2) |  |
+
 10. Charging_Stations
+
+| COLUMN | DATA TYPE | ROLE |
+|--------|----------|------|
+| station_id | VARCHAR(35) | PK |
+| location | VARCHAR(45) |  |
+| station_status | VARCHAR(45) |  |
+
+11. Battery_Usage
+
+| COLUMN | DATA TYPE | ROLE |
+|--------|----------|------|
+| battery_usage_current | DECIMAL(4,2) | PK |
+| drone_id | VARCHAR(35) | FK |
+| station_id | VARCHAR(35) | FK |
+| charge_start_time | DATETIME |  |
+| charge_end_time | DATETIME |  |
+| battery_level_before | INT |  |
+| battery_level_after | INT |  |
 
 ## Query
 1. Query 1.
