@@ -29,7 +29,7 @@ Routes
 
 | COLUMN | DATA TYPE | ROLE | DESCRIPTION |
 |--------|----------|------|-------------|
-| route_id | VARCHAR(35) | PK | Primary identifier of specific routes |
+| route_id | VARCHAR(35) | PK | Primary identifier of a specific route |
 | origin_location | VARCHAR(45) |  | Location of orgin for the route |
 | destination_location | VARCHAR(45) |  | Location of end destination for the route |
 | distance_km | DECIMAL(10,2) |  | Total distance of the route in kilometers |
