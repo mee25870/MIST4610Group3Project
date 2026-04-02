@@ -14,7 +14,7 @@ Sp26_61608_Group 3
 
 ## Data Dictionary
 
-1. Drones
+Drones
 
 | COLUMN | DATA TYPE | ROLE |
 |--------|----------|------|
@@ -25,7 +25,7 @@ Sp26_61608_Group 3
 | max_payload_weight | INT |  |
 | current_battery_level | INT |  |
 
-2. Routes
+Routes
 
 | COLUMN | DATA TYPE | ROLE |
 |--------|----------|------|
@@ -35,7 +35,7 @@ Sp26_61608_Group 3
 | distance_km | DECIMAL(10,2) |  |
 | estimated_duration | VARCHAR(45) |  |
 
-3. Packages
+Packages
 
 | COLUMN | DATA TYPE | ROLE |
 |--------|----------|------|
@@ -46,7 +46,7 @@ Sp26_61608_Group 3
 | dimensions | VARCHAR(45) |  |
 | package_status | VARCHAR(15) |  |
 
-4. Customers
+Customers
 
 | COLUMN | DATA TYPE | ROLE |
 |--------|----------|------|
@@ -56,7 +56,7 @@ Sp26_61608_Group 3
 | email | VARCHAR(45) |  |
 | delivery_address | VARCHAR(45) |  |
 
-5. Deliveries
+Deliveries
 
 | COLUMN | DATA TYPE | ROLE |
 |--------|----------|------|
@@ -68,7 +68,7 @@ Sp26_61608_Group 3
 | end_time | DATETIME |  |
 | delivery_status | VARCHAR(25) |  |
 
-6. Flight_Logs
+Flight_Logs
 
 | COLUMN | DATA TYPE | ROLE |
 |--------|----------|------|
@@ -79,7 +79,7 @@ Sp26_61608_Group 3
 | flight_end_time | DATETIME |  |
 | flight_duration_hours | DECIMAL(6,2) |  |
 
-7. Maintenance_Logs
+Maintenance_Logs
 
 | COLUMN | DATA TYPE | ROLE |
 |--------|----------|------|
@@ -91,7 +91,7 @@ Sp26_61608_Group 3
 | description | VARCHAR(99) |  |
 | total_flight_hours_at_service | DECIMAL(5,2) |  |
 
-8. Technicians
+Technicians
 
 | COLUMN | DATA TYPE | ROLE |
 |--------|----------|------|
@@ -101,7 +101,7 @@ Sp26_61608_Group 3
 | phone | VARCHAR(45) |  |
 | email | VARCHAR(45) |  |
 
-9. Maintenance_Parts
+Maintenance_Parts
 
 | COLUMN | DATA TYPE | ROLE |
 |--------|----------|------|
@@ -111,7 +111,7 @@ Sp26_61608_Group 3
 | quantity | INT |  |
 | cost | DECIMAL(8,2) |  |
 
-10. Charging_Stations
+Charging_Stations
 
 | COLUMN | DATA TYPE | ROLE |
 |--------|----------|------|
@@ -119,7 +119,7 @@ Sp26_61608_Group 3
 | location | VARCHAR(45) |  |
 | station_status | VARCHAR(45) |  |
 
-11. Battery_Usage
+Battery_Usage
 
 | COLUMN | DATA TYPE | ROLE |
 |--------|----------|------|
