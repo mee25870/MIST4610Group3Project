@@ -14,17 +14,17 @@ We are "Last Mile" Drone Logistics, a drone delivery company that specializes in
 <img width="1619" height="925" alt="Screenshot 2026-04-01 160752" src="https://github.com/user-attachments/assets/e341135b-4edc-42a6-8d45-2ddb12242410" />
 
 ### Explanation:
-A Customer can have many Packages, as well as many Deliveries
-A Package can only have one Delivery
-A Delivery can have many Packages, but only one Customer, one Drone, and one Route
-A Route can have many Deliveries and many Flight Logs
-A Flight Log can only have one Drone and one Route
-A Drone can have many Deliveries, Flight Logs, and Maintenence Logs, but only one Battery
-A Battery can only have one Drone and one Charging Station
-A Charging Station can have many Batteries
-A Maintenence Log can have many Maintenence Parts, but only one Technician and one Drone
-A Technician can have many Maintenence Logs
-A Maintenence Part can only have one Maintenence Log
+A Customer can have many Packages, as well as many Deliveries  
+A Package can only have one Delivery  
+A Delivery can have many Packages, but only one Customer, one Drone, and one Route  
+A Route can have many Deliveries and many Flight Logs  
+A Flight Log can only have one Drone and one Route  
+A Drone can have many Deliveries, Flight Logs, and Maintenence Logs, but only one Battery  
+A Battery can only have one Drone and one Charging Station  
+A Charging Station can have many Batteries  
+A Maintenence Log can have many Maintenence Parts, but only one Technician and one Drone  
+A Technician can have many Maintenence Logs  
+A Maintenence Part can only have one Maintenence Log  
 
 ## Data Dictionary
 
