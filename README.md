@@ -14,8 +14,8 @@ We are "Last Mile" Drone Logistics, a drone delivery company that specializes in
 <img width="1619" height="925" alt="Screenshot 2026-04-01 160752" src="https://github.com/user-attachments/assets/e341135b-4edc-42a6-8d45-2ddb12242410" />
 
 ### Explanation:
-A Customer can have many Packages, as well as many Deliveries  
-A Package can only have one Delivery  
+A Customer can have many Packages and many Deliveries  
+A Package can only have one Delivery and one Customer  
 A Delivery can have many Packages, but only one Customer, one Drone, and one Route  
 A Route can have many Deliveries and many Flight Logs  
 A Flight Log can only have one Drone and one Route  
