@@ -9,42 +9,31 @@ Sp26_61608_Group 3
 5. Ciara Trinh 
 6. Joshua Welch
 ## Problem Description
+We are "Last Mile" Drone Logistics, a drone delivery company that specializes in transporting packages via drone to consumers living in urban areas. Our business model requires us to constantly keep track of things such as customer orders, delivery status, and drone status in order to keep our business running without hiccups and keep consumers satisfied with their deliveries. Our Data Model logs info such as Customers, Packages, Deliveries, Technicians, and Drone health information, all for the purpose of keeping track of (and retrieving specific query info from) the multiple interconnected components within our database. As a result, having a data model will save us time, money, and resources in the long run and keep our company operating efficiently.
 ## Data Model
 <img width="1619" height="925" alt="Screenshot 2026-04-01 160752" src="https://github.com/user-attachments/assets/e341135b-4edc-42a6-8d45-2ddb12242410" />
 
 ## Data Dictionary
 
-Drones
+Battery_Usage
 
 | COLUMN | DATA TYPE | ROLE | DESCRIPTION |
 |--------|----------|------|-------------|
-| drone_id | VARCHAR(35) | PK | Main identifier for each individual drone |
-| model | VARCHAR(35) |  | Displays model of respective drone |
-| status | VARCHAR(11) |  | Gives insight on current operating condition |
-| total_flight_hours | DECIMAL(7,2) |  | Shows flight hours for each respectve drone |
-| max_payload_weight | INT |  | Displays max weight a drone can carry at one time |
-| current_battery_level | INT |  | Shows what battery percent the drone is at right now |
+| battery_usage_current | DECIMAL(4,2) | PK | The main identifier of the current battery usage of a drone |
+| drone_id | VARCHAR(35) | FK | Identifier of the drone tied to the current battery percentage number |
+| station_id | VARCHAR(35) | FK | Identifier of the station tied to battery usage |
+| charge_start_time | DATETIME |  | The time the charge session was initiated |
+| charge_end_time | DATETIME |  | The time the charge session concluded |
+| battery_level_before | INT |  | The initial battery percentage pre-charging session |
+| battery_level_after | INT |  | The battery percentage post-charging session |
 
-Routes
-
-| COLUMN | DATA TYPE | ROLE | DESCRIPTION |
-|--------|----------|------|-------------|
-| route_id | VARCHAR(35) | PK | Primary identifier of a specific route |
-| origin_location | VARCHAR(45) |  | Location of orgin for the route |
-| destination_location | VARCHAR(45) |  | Location of end destination for the route |
-| distance_km | DECIMAL(10,2) |  | Total distance of the route in kilometers |
-| estimated_duration | VARCHAR(45) |  | Length of time of the route |
-
-Packages
+Charging_Stations
 
 | COLUMN | DATA TYPE | ROLE | DESCRIPTION |
 |--------|----------|------|-------------|
-| package_id | VARCHAR(45) | PK | Main identifier of the individual package |
-| customer_id | VARCHAR(35) | FK | Identifier for the customer who ordered the respective package |
-| delivery_id | VARCHAR(45) | FK | Identifier for the delivery of the respective package |
-| weight | DECIMAL(5,2) |  | How much the package weighs |
-| dimensions | VARCHAR(45) |  | The given dimensions of a specific package |
-| package_status | VARCHAR(15) |  |  The current status of a respective package |
+| station_id | VARCHAR(35) | PK | The primary identifier for a station |
+| location | VARCHAR(45) |  | The location of a specific drone charging station |
+| station_status | VARCHAR(45) |  | The current status of a drone charging location |
 
 Customers
 
@@ -67,6 +56,17 @@ Deliveries
 | start_time | DATETIME |  | Date at which the delivery process was initiatied |
 | end_time | DATETIME |  | Date at which the delivery process concluded |
 | delivery_status | VARCHAR(25) |  | Current status of a respective delivery |
+
+Drones
+
+| COLUMN | DATA TYPE | ROLE | DESCRIPTION |
+|--------|----------|------|-------------|
+| drone_id | VARCHAR(35) | PK | Main identifier for each individual drone |
+| model | VARCHAR(35) |  | Displays model of respective drone |
+| status | VARCHAR(11) |  | Gives insight on current operating condition |
+| total_flight_hours | DECIMAL(7,2) |  | Shows flight hours for each respectve drone |
+| max_payload_weight | INT |  | Displays max weight a drone can carry at one time |
+| current_battery_level | INT |  | Shows what battery percent the drone is at right now |
 
 Flight_Logs
 
@@ -91,16 +91,6 @@ Maintenance_Logs
 | description | VARCHAR(99) |  | Description of maintenance that took place |
 | total_flight_hours_at_service | DECIMAL(5,2) |  | The flight hours completed at service for the respective drone |
 
-Technicians
-
-| COLUMN | DATA TYPE | ROLE | DESCRIPTION |
-|--------|----------|------|-------------|
-| technician_id | VARCHAR(35) | PK | Primary identifier for the individual technician |
-| name | VARCHAR(35) |  | The name of the respective technician |
-| specialization | VARCHAR(45) |  | The type of work a technician specializes in |
-| phone | VARCHAR(45) |  | The phone number of a specific technician |
-| email | VARCHAR(45) |  | The email address of a specific technician |
-
 Maintenance_Parts
 
 | COLUMN | DATA TYPE | ROLE | DESCRIPTION |
@@ -111,25 +101,37 @@ Maintenance_Parts
 | quantity | INT |  | The total amount of a part in stock |
 | cost | DECIMAL(8,2) |  | The cost of an individual part |
 
-Charging_Stations
+Packages
 
 | COLUMN | DATA TYPE | ROLE | DESCRIPTION |
 |--------|----------|------|-------------|
-| station_id | VARCHAR(35) | PK | The primary identifier for a station |
-| location | VARCHAR(45) |  | The location of a specific drone charging station |
-| station_status | VARCHAR(45) |  | The current status of a drone charging location |
+| package_id | VARCHAR(45) | PK | Main identifier of the individual package |
+| customer_id | VARCHAR(35) | FK | Identifier for the customer who ordered the respective package |
+| delivery_id | VARCHAR(45) | FK | Identifier for the delivery of the respective package |
+| weight | DECIMAL(5,2) |  | How much the package weighs |
+| dimensions | VARCHAR(45) |  | The given dimensions of a specific package |
+| package_status | VARCHAR(15) |  |  The current status of a respective package |
 
-Battery_Usage
+Routes
 
 | COLUMN | DATA TYPE | ROLE | DESCRIPTION |
 |--------|----------|------|-------------|
-| battery_usage_current | DECIMAL(4,2) | PK | The main identifier of the current battery usage of a drone |
-| drone_id | VARCHAR(35) | FK | Identifier of the drone tied to the current battery percentage number |
-| station_id | VARCHAR(35) | FK | Identifier of the station tied to battery usage |
-| charge_start_time | DATETIME |  | The time the charge session was initiated |
-| charge_end_time | DATETIME |  | The time the charge session concluded |
-| battery_level_before | INT |  | The initial battery percentage pre-charging session |
-| battery_level_after | INT |  | The battery percentage post-charging session |
+| route_id | VARCHAR(35) | PK | Primary identifier of a specific route |
+| origin_location | VARCHAR(45) |  | Location of orgin for the route |
+| destination_location | VARCHAR(45) |  | Location of end destination for the route |
+| distance_km | DECIMAL(10,2) |  | Total distance of the route in kilometers |
+| estimated_duration | VARCHAR(45) |  | Length of time of the route |
+
+Technicians
+
+| COLUMN | DATA TYPE | ROLE | DESCRIPTION |
+|--------|----------|------|-------------|
+| technician_id | VARCHAR(35) | PK | Primary identifier for the individual technician |
+| name | VARCHAR(35) |  | The name of the respective technician |
+| specialization | VARCHAR(45) |  | The type of work a technician specializes in |
+| phone | VARCHAR(45) |  | The phone number of a specific technician |
+| email | VARCHAR(45) |  | The email address of a specific technician |
+
 
 ## Query
 1. Query 1.
