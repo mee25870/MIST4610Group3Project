@@ -147,20 +147,29 @@ Technicians
 
 
 ## Query
-1. Query 1.
+1. Query 1
+<img width="625" height="83" alt="Screenshot 2026-04-03 at 02 43 42" src="https://github.com/user-attachments/assets/bdb8ec17-f342-44e2-9344-77777267e95e" />
+<img width="623" height="104" alt="Screenshot 2026-04-03 at 02 44 09" src="https://github.com/user-attachments/assets/16ac9384-e1ec-4d3d-a5e9-503403119403" />
 2. Query 2.
+<img width="290" height="73" alt="Screenshot 2026-04-03 at 02 44 36" src="https://github.com/user-attachments/assets/3f9e95a0-e2ff-4f4f-a23a-23aa3a7635ba" />
+<img width="251" height="99" alt="Screenshot 2026-04-03 at 02 44 49" src="https://github.com/user-attachments/assets/f5ad83c1-a8e2-4495-b1dd-dd019b35793a" />
 3. Query 3.
+<img width="484" height="64" alt="Screenshot 2026-04-03 at 02 45 15" src="https://github.com/user-attachments/assets/8a58eeca-fbe2-4147-924b-0eabe4676e73" />
+<img width="487" height="84" alt="Screenshot 2026-04-03 at 02 45 28" src="https://github.com/user-attachments/assets/8e7f3bfe-398c-4a05-87c5-2097fe50d019" />
 4. Query 4.
+<img width="629" height="118" alt="Screenshot 2026-04-03 at 02 46 23" src="https://github.com/user-attachments/assets/38e226da-2037-4c26-91a7-8fe5aaf54dc5" />
+<img width="450" height="162" alt="Screenshot 2026-04-03 at 02 46 38" src="https://github.com/user-attachments/assets/28017fd6-0f51-4b70-aeec-d4d94f517aca" />
+   
 5. Query 5.
 6. Query 6.
 7. Query 7.
 8. Query 8.
    <img width="1852" height="786" alt="Screenshot 2026-04-01 155233" src="https://github.com/user-attachments/assets/14bfdc81-9035-4fde-ac50-7de1dc905bd7" />
    
-10. Query 9.
+9. Query 9.
     <img width="1256" height="658" alt="Screenshot 2026-04-01 155644" src="https://github.com/user-attachments/assets/df02b65c-8f47-43d4-95af-e272e4ab14a7" />
     
-12. Query 10.
+10. Query 10.
     <img width="1846" height="798" alt="Screenshot 2026-04-01 155733" src="https://github.com/user-attachments/assets/219a1279-4999-466b-9e6c-05ac315d07da" />
 
 ## Database Information
