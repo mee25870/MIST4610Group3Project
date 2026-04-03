@@ -154,13 +154,13 @@ Technicians
 5. Query 5.
 6. Query 6.
 7. Query 7.
-8. Query 8.
+8. Query 8 answers the questions 'What are the delivery success rates per each origin location? Which one has the lowest failure rate?' This query allows managers to compare success and failure rates across all origin locations. Different locations may have variations in their delivery outcomes due to factors such as drone availability or route difficulty. This is important to understand as the results let the manager pinpoint the locations that are underperforming and replicate practices at the successful ones to hopefully decrease the failure rates across all locations.
    <img width="1852" height="786" alt="Screenshot 2026-04-01 155233" src="https://github.com/user-attachments/assets/14bfdc81-9035-4fde-ac50-7de1dc905bd7" />
    
-10. Query 9.
+10. Query 9 answers the question 'What is the average battery level gained and number of charging sessions per drone?' This query helps to track battery life and charging efficiency. This gives the manager a view of each drone’s charging efficiency and highlights ones with a declining battery health. If a drone is consistently gaining less charge per session, it could be an indicator that the battery is getting old and needs to be replaced. Flagging these drones helps to prevent them from failing mid-delivery.
     <img width="1256" height="658" alt="Screenshot 2026-04-01 155644" src="https://github.com/user-attachments/assets/df02b65c-8f47-43d4-95af-e272e4ab14a7" />
     
-12. Query 10.
+12. Query 10 answers the question 'What are the most frequently used parts across all maintenance events, include total quantity used and total spent?' This query helps managers to keep track of which parts are being used most often which aids in inventory planning and procurement. High-usage parts can be scheduled to be purchased more frequently which reduces the risk of stock-outs and rush orders. Additionally, if a part is being purchased frequently, there could be an underlying design flaw or operational issue. By identifying these issues early on, the company can reduce recurring failures. 
     <img width="1846" height="798" alt="Screenshot 2026-04-01 155733" src="https://github.com/user-attachments/assets/219a1279-4999-466b-9e6c-05ac315d07da" />
 
 ## Database Information
