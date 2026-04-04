@@ -169,19 +169,34 @@ Matrix
 1. Query 1.
 <img width="612" height="79" alt="Screenshot 2026-04-03 at 21 44 28" src="https://github.com/user-attachments/assets/24c33171-109a-4892-bb67-3022d0d11751" />
 <img width="640" height="104" alt="Screenshot 2026-04-03 at 21 44 40" src="https://github.com/user-attachments/assets/c72013e3-7a04-4187-937c-8a213d502912" />
-Query 1 answers the questions "Which drones are currently in "Maintenance" Status?" 
+Query 1 answers the questions "Which drones are currently in "Maintenance" Status?"
+
+
+
+
 3. Query 2.
-4. Query 3.
-5. Query 4.
-6. Query 5.
-7. Query 6.
-8. Query 7.
-9. Query 8 answers the questions 'What are the delivery success rates per each origin location? Which one has the lowest failure rate?' This query uses CASE WHEN clauses in order to find failure percentage rate which is calculated in the last CASE WHEN clause by dividing failed deliveries by the total. The results are ordered by failure rate percentage in descending order which helps to pinpoint the origin location that is the least successful. 
+<img width="317" height="93" alt="Screenshot 2026-04-03 at 21 47 17" src="https://github.com/user-attachments/assets/bde18aef-37de-4cea-a61c-0b4cce4b41f9" />
+<img width="298" height="112" alt="Screenshot 2026-04-03 at 21 47 30" src="https://github.com/user-attachments/assets/bcad3612-fe2a-4852-b9f4-b02df1ae5d4a" />
+
+5. Query 3.
+<img width="507" height="82" alt="Screenshot 2026-04-03 at 21 48 53" src="https://github.com/user-attachments/assets/5297d641-20c7-4230-b4e7-d920d4061457" />
+<img width="517" height="84" alt="Screenshot 2026-04-03 at 21 49 08" src="https://github.com/user-attachments/assets/17bdea8b-cb9b-4071-b2bd-ba4866785b67" />
+
+7. Query 4.
+<img width="645" height="146" alt="Screenshot 2026-04-03 at 21 49 28" src="https://github.com/user-attachments/assets/b330da67-a94a-4c3d-b166-6c5aa9237d2c" />
+<img width="469" height="177" alt="Screenshot 2026-04-03 at 21 49 41" src="https://github.com/user-attachments/assets/60e8eef1-6cd9-402a-bf17-c2d09d9ad09d" />
+
+9. Query 5.
+10. Query 6.
+11. Query 7.
+
+
+12. Query 8 answers the questions 'What are the delivery success rates per each origin location? Which one has the lowest failure rate?' This query uses CASE WHEN clauses in order to find failure percentage rate which is calculated in the last CASE WHEN clause by dividing failed deliveries by the total. The results are ordered by failure rate percentage in descending order which helps to pinpoint the origin location that is the least successful. 
 Query 8 allows managers to compare success and failure rates across all origin locations. Different locations may have variations in their delivery outcomes due to factors such as drone availability or route difficulty. This is important to understand as the results let the manager pinpoint the locations that are underperforming and replicate practices at the successful ones to hopefully decrease the failure rates across all locations.
 
    <img width="1852" height="786" alt="Screenshot 2026-04-01 155233" src="https://github.com/user-attachments/assets/14bfdc81-9035-4fde-ac50-7de1dc905bd7" />
    
-10. Query 9 answers the question 'What is the average battery level gained and number of charging sessions per drone?' The query lists the amount of charge sessions and the average battery gained during those sessions for each drone. The results are ordered by average battery gained in order to see which drones may have degrading battery health. The WHERE clause also filters out incomplete charging sessions before the aggregation is performed, so only meaningful charging sessions are included.
+11. Query 9 answers the question 'What is the average battery level gained and number of charging sessions per drone?' The query lists the amount of charge sessions and the average battery gained during those sessions for each drone. The results are ordered by average battery gained in order to see which drones may have degrading battery health. The WHERE clause also filters out incomplete charging sessions before the aggregation is performed, so only meaningful charging sessions are included.
 Query 9 helps to track battery life and charging efficiency. This gives the manager a view of each drone’s charging efficiency and highlights ones with a declining battery health. If a drone is consistently gaining less charge per session, it could be an indicator that the battery is getting old and needs to be replaced. Flagging these drones helps to prevent them from failing mid-delivery.
 
     <img width="1256" height="658" alt="Screenshot 2026-04-01 155644" src="https://github.com/user-attachments/assets/df02b65c-8f47-43d4-95af-e272e4ab14a7" />
