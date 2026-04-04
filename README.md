@@ -173,35 +173,44 @@ Matrix
 Query 1 lists all drones that are currently under maintenance along with key details such as their ID, model, total flight hours, and current battery level. The results only include drones with a status of “Maintenance,” meaning they are not available for deliveries.
 Query 1 allows managers to quickly see which drones are out of service and therefore cannot be used for delivery operations. By including information such as total flight hours and battery level, managers can better understand the condition of each drone and possible reasons for maintenance. This is important because drones in maintenance reduce overall delivery capacity, especially during busy periods.
 
-3. Query 2.
+2. Query 2.
 <img width="302" height="482" alt="q2 2026-04-03 203222" src="https://github.com/user-attachments/assets/a76804da-e10a-4188-9fde-fc0734b54c4e" />
 
-4. Query 3.
+Query 2 lists all charging stations that are currently available along with their station ID and location. The results only include stations with a status of “Available,” meaning they are ready for use.
+Query 2 allows managers to quickly identify which charging stations are open and can be used by drones. This is important for maintaining efficient operations, as available charging stations ensure drones can recharge and continue deliveries without delay. By knowing the exact locations of these stations, managers can better plan routes and allocate drones to nearby charging points. This helps prevent downtime, improves delivery efficiency, and ensures that resources are used effectively.
+
+3. Query 3.
 <img width="402" height="422" alt="q3 2026-04-03 203302" src="https://github.com/user-attachments/assets/b781d3ac-ee66-4c97-90d7-3e34705864fd" />
 
-5. Query 4.
+Query 3 lists all deliveries that have failed along with key details such as the delivery ID, drone ID, route ID, customer ID, and start time. The results only include deliveries with a status of “Failed,” meaning these deliveries were not successfully completed.
+Query 3 allows managers to identify which deliveries did not go as planned and investigate potential issues. By including details such as the drone used, route taken, and timing of the delivery, managers can analyze patterns or recurring problems, such as specific routes or drones that may be causing failures. This is important for improving operational efficiency and reducing future delivery issues. 
+
+4. Query 4.
 <img width="402" height="522" alt="q4 2026-04-03 203344" src="https://github.com/user-attachments/assets/9e6ab3f3-b782-4f47-918c-abd3a2b054fa" />
 
-6. Query 5 shows the amount of maintence events each drone has had to undergo and how much those services have cost. This can help a manager identify which drones may need to be taken out of the field or are not worth saving. It can also provide insights into which models breakdown or require heavy maintence, which can change furutre purchasing decisions when replenishing or expanding the drone fleet. 
+Query 4 lists customers along with their customer ID, name, and the total number of deliveries they have made. The results only include customers who have placed more than one order, as indicated by the condition that filters for counts greater than one.
+Query 4 allows managers to identify repeat customers who frequently use the delivery service. This is important because these customers may represent loyal or high-value users of the platform. By understanding which customers place multiple orders, managers can target them for promotions or rewards programs to increase customer retention. Additionally, this insight helps businesses analyze customer behavior patterns and focus on maintaining strong relationships with their most active users.
+
+5. Query 5 shows the amount of maintence events each drone has had to undergo and how much those services have cost. This can help a manager identify which drones may need to be taken out of the field or are not worth saving. It can also provide insights into which models breakdown or require heavy maintence, which can change furutre purchasing decisions when replenishing or expanding the drone fleet. 
 <img width="602" height="582" alt="q5 2026-04-03 203442" src="https://github.com/user-attachments/assets/6e1153ff-3d99-496e-9165-bb3c01068fbe" />
 
-7. Query 6 finds the number of repairs performed and the total cost of all parts used by each technician. This helps managers keep track of their technicians workload and how efficent they are with their repairs in terms of the cost of the parts. This allows managers to manage workloads to prevent burnouts and creates accountability for high cost repairs. 
+6. Query 6 finds the number of repairs performed and the total cost of all parts used by each technician. This helps managers keep track of their technicians workload and how efficent they are with their repairs in terms of the cost of the parts. This allows managers to manage workloads to prevent burnouts and creates accountability for high cost repairs. 
 <img width="602" height="584" alt="q6 2026-04-03 203530" src="https://github.com/user-attachments/assets/a0bcb01a-0bf2-45d4-8dd9-4a1255781f6f" />
 
-8. Query 7 retrieves the total package weight delivered per route. This helps the manager understand which routes have the heaviest packages running through them. Knowing which routes take the heaviest packages allows a manager to startegically assign the better drones, with a heavier carrying capacity to the heavier routes. A manager can also plan for things like increased battery usage with a heavier payload.
+7. Query 7 retrieves the total package weight delivered per route. This helps the manager understand which routes have the heaviest packages running through them. Knowing which routes take the heaviest packages allows a manager to startegically assign the better drones, with a heavier carrying capacity to the heavier routes. A manager can also plan for things like increased battery usage with a heavier payload.
 <img width="602" height="654" alt="q7 2026-04-03 203620" src="https://github.com/user-attachments/assets/d06e2570-9092-422c-9c36-e34d788a523d" />
 
-9. Query 8 answers the questions 'What are the delivery success rates per each origin location? Which one has the lowest failure rate?' This query uses CASE WHEN clauses in order to find failure percentage rate which is calculated in the last CASE WHEN clause by dividing failed deliveries by the total. The results are ordered by failure rate percentage in descending order which helps to pinpoint the origin location that is the least successful. 
+8. Query 8 answers the questions 'What are the delivery success rates per each origin location? Which one has the lowest failure rate?' This query uses CASE WHEN clauses in order to find failure percentage rate which is calculated in the last CASE WHEN clause by dividing failed deliveries by the total. The results are ordered by failure rate percentage in descending order which helps to pinpoint the origin location that is the least successful. 
 Query 8 allows managers to compare success and failure rates across all origin locations. Different locations may have variations in their delivery outcomes due to factors such as drone availability or route difficulty. This is important to understand as the results let the manager pinpoint the locations that are underperforming and replicate practices at the successful ones to hopefully decrease the failure rates across all locations.
 
    <img width="602" height="786" alt="Screenshot 2026-04-01 155233" src="https://github.com/user-attachments/assets/14bfdc81-9035-4fde-ac50-7de1dc905bd7" />
    
-10. Query 9 answers the question 'What is the average battery level gained and number of charging sessions per drone?' The query lists the amount of charge sessions and the average battery gained during those sessions for each drone. The results are ordered by average battery gained in order to see which drones may have degrading battery health. The WHERE clause also filters out incomplete charging sessions before the aggregation is performed, so only meaningful charging sessions are included.
+9. Query 9 answers the question 'What is the average battery level gained and number of charging sessions per drone?' The query lists the amount of charge sessions and the average battery gained during those sessions for each drone. The results are ordered by average battery gained in order to see which drones may have degrading battery health. The WHERE clause also filters out incomplete charging sessions before the aggregation is performed, so only meaningful charging sessions are included.
 Query 9 helps to track battery life and charging efficiency. This gives the manager a view of each drone’s charging efficiency and highlights ones with a declining battery health. If a drone is consistently gaining less charge per session, it could be an indicator that the battery is getting old and needs to be replaced. Flagging these drones helps to prevent them from failing mid-delivery.
 
     <img width="602" height="658" alt="Screenshot 2026-04-01 155644" src="https://github.com/user-attachments/assets/df02b65c-8f47-43d4-95af-e272e4ab14a7" />
     
-12. Query 10 answers the question 'What are the most frequently used parts across all maintenance events, include total quantity used and total spent?' The query lists how many times a part has been used, how much of its inventory was consumed, and the total spent on the parts, all of which are grouped by the part name. Additionally, the results are ordered by total spent in descending order which shows which parts are costing the company the most. 
+10. Query 10 answers the question 'What are the most frequently used parts across all maintenance events, include total quantity used and total spent?' The query lists how many times a part has been used, how much of its inventory was consumed, and the total spent on the parts, all of which are grouped by the part name. Additionally, the results are ordered by total spent in descending order which shows which parts are costing the company the most. 
 Query 10 helps managers to keep track of which parts are being used most often which aids in inventory planning and procurement. High-usage parts can be scheduled to be purchased more frequently which reduces the risk of stock-outs and rush orders. Additionally, if a part is being purchased frequently, there could be an underlying design flaw or operational issue. By identifying these issues early on, the company can reduce recurring failures.
 
     <img width="602" height="798" alt="Screenshot 2026-04-01 155733" src="https://github.com/user-attachments/assets/219a1279-4999-466b-9e6c-05ac315d07da" />
