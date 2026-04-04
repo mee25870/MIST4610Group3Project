@@ -178,13 +178,13 @@ Matrix
 4. Query 4.
 <img width="402" height="522" alt="q4 2026-04-03 203344" src="https://github.com/user-attachments/assets/9e6ab3f3-b782-4f47-918c-abd3a2b054fa" />
 
-5. Query 5.
+5. Query 5 shows the amount of maintence events each drone has had to undergo and how much those services have cost. This can help a manager identify which drones may need to be taken out of the field or are not worth saving. It can also provide insights into which models breakdown or require heavy maintence, which can change furutre purchasing decisions when replenishing or expanding the drone fleet. 
 <img width="602" height="582" alt="q5 2026-04-03 203442" src="https://github.com/user-attachments/assets/6e1153ff-3d99-496e-9165-bb3c01068fbe" />
 
-6. Query 6.
+6. Query 6 finds the number of repairs performed and the total cost of all parts used by each technician. This helps managers keep track of their technicians workload and how efficent they are with their repairs in terms of the cost of the parts. This allows managers to manage workloads to prevent burnouts and creates accountability for high cost repairs. 
 <img width="602" height="584" alt="q6 2026-04-03 203530" src="https://github.com/user-attachments/assets/a0bcb01a-0bf2-45d4-8dd9-4a1255781f6f" />
 
-7. Query 7.
+7. Query 7 retrieves the total package weight delivered per route. This helps the manager understand which routes have the heaviest packages running through them. Knowing which routes take the heaviest packages allows a manager to startegically assign the better drones, with a heavier carrying capacity to the heavier routes. A manager can also plan for things like increased battery usage with a heavier payload.
 <img width="602" height="654" alt="q7 2026-04-03 203620" src="https://github.com/user-attachments/assets/d06e2570-9092-422c-9c36-e34d788a523d" />
 
 8. Query 8 answers the questions 'What are the delivery success rates per each origin location? Which one has the lowest failure rate?' This query uses CASE WHEN clauses in order to find failure percentage rate which is calculated in the last CASE WHEN clause by dividing failed deliveries by the total. The results are ordered by failure rate percentage in descending order which helps to pinpoint the origin location that is the least successful. 
