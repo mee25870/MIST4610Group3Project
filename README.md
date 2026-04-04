@@ -167,13 +167,16 @@ Matrix
 
 ## Query
 1. Query 1.
-2. Query 2.
-3. Query 3.
-4. Query 4.
-5. Query 5.
-6. Query 6.
-7. Query 7.
-8. Query 8 answers the questions 'What are the delivery success rates per each origin location? Which one has the lowest failure rate?' This query uses CASE WHEN clauses in order to find failure percentage rate which is calculated in the last CASE WHEN clause by dividing failed deliveries by the total. The results are ordered by failure rate percentage in descending order which helps to pinpoint the origin location that is the least successful. 
+<img width="612" height="79" alt="Screenshot 2026-04-03 at 21 44 28" src="https://github.com/user-attachments/assets/24c33171-109a-4892-bb67-3022d0d11751" />
+<img width="640" height="104" alt="Screenshot 2026-04-03 at 21 44 40" src="https://github.com/user-attachments/assets/c72013e3-7a04-4187-937c-8a213d502912" />
+Query 1 answers the questions "Which drones are currently in "Maintenance" Status?" 
+3. Query 2.
+4. Query 3.
+5. Query 4.
+6. Query 5.
+7. Query 6.
+8. Query 7.
+9. Query 8 answers the questions 'What are the delivery success rates per each origin location? Which one has the lowest failure rate?' This query uses CASE WHEN clauses in order to find failure percentage rate which is calculated in the last CASE WHEN clause by dividing failed deliveries by the total. The results are ordered by failure rate percentage in descending order which helps to pinpoint the origin location that is the least successful. 
 Query 8 allows managers to compare success and failure rates across all origin locations. Different locations may have variations in their delivery outcomes due to factors such as drone availability or route difficulty. This is important to understand as the results let the manager pinpoint the locations that are underperforming and replicate practices at the successful ones to hopefully decrease the failure rates across all locations.
 
    <img width="1852" height="786" alt="Screenshot 2026-04-01 155233" src="https://github.com/user-attachments/assets/14bfdc81-9035-4fde-ac50-7de1dc905bd7" />
