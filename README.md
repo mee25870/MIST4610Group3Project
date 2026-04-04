@@ -6,7 +6,7 @@ Sp26_61608_Group 3
 2. Israel Erewa-Meggison [@israelmeggison](https://github.com/israelmeggison)
 3. Cole Hauser	[@colehauser2005](https://github.com/colehauser2005)
 4. Trey Hill [@treyhill277](https://github.com/treyhill277)
-5. Ciara Trinh 
+5. Ciara Trinh [@cmt37912](https://github.com/cmt37912)
 6. Joshua Welch [@jew22145](https://github.com/jew22145)
 ## Problem Description
 We are "Last Mile" Drone Logistics, a drone delivery company that specializes in transporting packages via drone to consumers living in urban areas. Our business model requires us to constantly keep track of things such as customer orders, delivery status, and drone status in order to keep our business running without hiccups and keep consumers satisfied with their deliveries. Our Data Model logs info such as Customers, Packages, Deliveries, Technicians, and Drone health information, all for the purpose of keeping track of (and retrieving specific query info from) the multiple interconnected components within our database. As a result, having a data model will save us time, money, and resources in the long run and keep our company operating efficiently.
