@@ -168,6 +168,8 @@ Matrix
 ## Query
 1. Query 1.
 <img width="402" height="464" alt="q1 2026-04-03 203108" src="https://github.com/user-attachments/assets/5d1256d9-2104-49b5-a57a-09b50f749da6" />
+
+
 Query 1 lists all drones that are currently under maintenance along with key details such as their ID, model, total flight hours, and current battery level. The results only include drones with a status of “Maintenance,” meaning they are not available for deliveries.
 Query 1 allows managers to quickly see which drones are out of service and therefore cannot be used for delivery operations. By including information such as total flight hours and battery level, managers can better understand the condition of each drone and possible reasons for maintenance. This is important because drones in maintenance reduce overall delivery capacity, especially during busy periods.
 
