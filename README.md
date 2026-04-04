@@ -186,9 +186,15 @@ Query 1 answers the questions "Which drones are currently in "Maintenance" Statu
 <img width="645" height="146" alt="Screenshot 2026-04-03 at 21 49 28" src="https://github.com/user-attachments/assets/b330da67-a94a-4c3d-b166-6c5aa9237d2c" />
 <img width="469" height="177" alt="Screenshot 2026-04-03 at 21 49 41" src="https://github.com/user-attachments/assets/60e8eef1-6cd9-402a-bf17-c2d09d9ad09d" />
 
-9. Query 5.
-10. Query 6.
-11. Query 7.
+5. Query 5.
+<img width="602" height="582" alt="q5 2026-04-03 203442" src="https://github.com/user-attachments/assets/6e1153ff-3d99-496e-9165-bb3c01068fbe" />
+
+6. Query 6.
+<img width="602" height="584" alt="q6 2026-04-03 203530" src="https://github.com/user-attachments/assets/a0bcb01a-0bf2-45d4-8dd9-4a1255781f6f" />
+
+7. Query 7.
+<img width="602" height="654" alt="q7 2026-04-03 203620" src="https://github.com/user-attachments/assets/d06e2570-9092-422c-9c36-e34d788a523d" />
+
 
 
 12. Query 8 answers the questions 'What are the delivery success rates per each origin location? Which one has the lowest failure rate?' This query uses CASE WHEN clauses in order to find failure percentage rate which is calculated in the last CASE WHEN clause by dividing failed deliveries by the total. The results are ordered by failure rate percentage in descending order which helps to pinpoint the origin location that is the least successful. 
