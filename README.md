@@ -148,6 +148,22 @@ Technicians
 | phone | VARCHAR(45) |  | The phone number of a specific technician |
 | email | VARCHAR(45) |  | The email address of a specific technician |
 
+Matrix
+| Feature         | Q1 | Q2 | Q3 | Q4 | Q5 | Q6 | Q7 | Q8 | Q9 | Q10 |
+|----------------|----|----|----|----|----|----|----|----|----|----|
+| SELECT/FROM    | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| WHERE          | ✅ | ✅ | ✅ |    |    |    | ✅ |    | ✅ |    |
+| JOIN           |    |    |    | ✅ | ✅ | ✅ | ✅ | ✅ |    | ✅ |
+| GROUP BY       |    |    |    | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| HAVING         |    |    |    | ✅ |    |    |    |    |    |    |
+| ORDER BY       |    |    |    |    | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| COUNT()        |    |    |    | ✅ | ✅ | ✅ | ✅ | ✅ |    | ✅ |
+| SUM()          |    |    |    |    | ✅ | ✅ | ✅ | ✅ |    | ✅ |
+| AVG()          |    |    |    |    |    |    |    |    | ✅ |    |
+| CASE WHEN      |    |    |    |    |    |    |    | ✅ |    |    |
+| ROUND()        |    |    |    |    |    |    |    | ✅ | ✅ |    |
+| Multi-JOIN     |    |    |    |    | ✅ | ✅ | ✅ |    |    |    |
+| COUNT(DISTINCT)|    |    |    |    | ✅ | ✅ |    |    |    |    |
 
 ## Query
 1. Query 1.
