@@ -14,17 +14,20 @@ We are "Last Mile" Drone Logistics, a drone delivery company that specializes in
 <img width="1619" height="925" alt="Screenshot 2026-04-01 160752" src="https://github.com/user-attachments/assets/e341135b-4edc-42a6-8d45-2ddb12242410" />
 
 ### Explanation:
-A Customer can have many Packages and many Deliveries  
-A Package can only have one Delivery and one Customer  
-A Delivery can have many Packages, but only one Customer, one Drone, and one Route  
-A Route can have many Deliveries and many Flight Logs  
-A Flight Log can only have one Drone and one Route  
-A Drone can have many Deliveries, Flight Logs, and Maintenence Logs, but only one Battery  
-A Battery can only have one Drone and one Charging Station  
-A Charging Station can have many Batteries  
-A Maintenence Log can have many Maintenence Parts, but only one Technician and one Drone  
-A Technician can have many Maintenence Logs  
-A Maintenence Part can only have one Maintenence Log  
+Our data model is specifically designed for the needs of our business. To begin, we have the series of relationships that are responsible for connecting data related to our customers and their orders to the rest of our database. Tables consisting of Customers and their packages, as well as delivery information, are connected/related to each other in the following ways:  
+#### A Customer can have many Packages and many Deliveries  
+#### A Package can only have one Delivery and one Customer  
+#### A Delivery can have many Packages, but only one Customer, one Drone, and one Route;  
+Next is our route information, which keeps track of the actual routes and locations navigated by drones. This section also includes Flight Log information which stores history on previous drone flights. the relationships regarding route information are described below:  
+#### A Route can have many Deliveries and many Flight Logs  
+#### A Flight Log can only have one Drone and one Route;  
+Next are the tables containing information on our drones themselves; these tables contain information such as maintenance performed on drones (and technicians who performed the maintenance), drone flight and health data, as well as information pertaining to batteries and charging stations. These relationships are described below:  
+#### A Drone can have many Deliveries, Flight Logs, and Maintenence Logs, but only one Battery  
+#### A Battery can only have one Drone and one Charging Station  
+#### A Charging Station can have many Batteries  
+#### A Maintenence Log can have many Maintenence Parts, but only one Technician and one Drone  
+#### A Technician can have many Maintenence Logs  
+#### A Maintenence Part can only have one Maintenence Log  
 
 ## Data Dictionary
 
